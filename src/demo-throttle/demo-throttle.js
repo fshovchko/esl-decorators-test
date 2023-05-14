@@ -1,8 +1,7 @@
-import {ExportNs, listen, throttle} from '@exadel/esl/modules/esl-utils/all';
+import {listen, throttle} from '@exadel/esl/modules/esl-utils/all';
 import {ESLDecoratedEventTarget} from '@exadel/esl/modules/esl-event-listener/core';
 import {ESLTrigger} from '@exadel/esl/modules/esl-trigger/core';
 
-@ExportNs('Demo.Throttle')
 export class ESLDemoThrottle extends ESLTrigger {
   static is = 'esl-d-throttle';
 
