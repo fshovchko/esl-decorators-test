@@ -1,6 +1,7 @@
-import {jsonAttr, prop} from '@exadel/esl/modules/esl-utils/all';
+import {ExportNs, jsonAttr, prop} from '@exadel/esl/modules/esl-utils/all';
 import {ESLToggleable} from '@exadel/esl/modules/esl-toggleable/core';
 
+@ExportNs('Demo.Attribute')
 export class ESLDemoAttribute extends ESLToggleable {
   static is = 'esl-d-attribute';
 

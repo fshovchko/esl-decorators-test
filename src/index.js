@@ -1,3 +1,5 @@
+import './global';
+
 import {ESLTrigger} from '@exadel/esl/modules/esl-trigger/core';
 import {ESLToggleable} from '@exadel/esl/modules/esl-toggleable/core';
 
