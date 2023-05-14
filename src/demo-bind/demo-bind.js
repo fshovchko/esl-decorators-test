@@ -1,7 +1,6 @@
-import {ExportNs, ready, bind} from '@exadel/esl/modules/esl-utils/all';
+import {ready, bind} from '@exadel/esl/modules/esl-utils/all';
 import {ESLTrigger} from '@exadel/esl/modules/esl-trigger/core';
 
-@ExportNs('Bind')
 export class ESLDemoBind extends ESLTrigger {
   static is = 'esl-d-bind';
 
