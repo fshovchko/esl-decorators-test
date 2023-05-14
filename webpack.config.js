@@ -5,6 +5,7 @@ module.exports = {
   entry: [path.resolve(__dirname, './src/index.js'), path.resolve(__dirname, './src/index.css')],
 
   mode: 'development',
+  devtool: 'source-map',
 
   devServer: {
     static: {
