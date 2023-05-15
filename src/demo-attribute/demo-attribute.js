@@ -1,15 +1,20 @@
-import {jsonAttr, prop} from '@exadel/esl/modules/esl-utils/all';
-import {ESLToggleable} from '@exadel/esl/modules/esl-toggleable/core';
+import {attr, prop, listen} from '@exadel/esl/modules/esl-utils/all';
+import {ESLTrigger} from '@exadel/esl/modules/esl-trigger/core';
 
-export class ESLDemoAttribute extends ESLToggleable {
+export class ESLDemoAttribute extends ESLTrigger {
   static is = 'esl-d-attribute';
 
-  @prop('esl:demo:before:show') BEFORE_SHOW_EVENT;
-
-  @jsonAttr({defaultValue: {showDelay: 2000}}) defaultParams;
-
+  @prop('click') CLICK_EVENT;
+  
+  @attr({defaultValue: '1000'}) showDelay;
+  
   connectedCallback() {
-    console.log(this.defaultParams, this.BEFORE_SHOW_EVENT); // BUG: both are undefined
     super.connectedCallback();
+    console.log(this.CLICK_EVENT, this.showDelay); // BUG: both are undefined
+  }
+
+  @listen((that) => that.CLICK_EVENT)
+  _onClick(e) {
+    super._onClick(e);
   }
 }

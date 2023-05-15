@@ -33,7 +33,7 @@
         <div>
           <esl-d-throttle target="#demo-2" mode="toggle" class="btn">Toggle</esl-d-throttle>
           <esl-d-throttle target="#demo-2" mode="show" class="btn">Show</esl-d-throttle>
-          <esl-d-throttle target="#demo-2" mode="hide" class="btn btn-sec-blue">Hide</esl-d-throttle>
+          <esl-d-throttle target="#demo-2" mode="hide" class="btn">Hide</esl-d-throttle>
         </div>
       </div>
     </section>
@@ -50,9 +50,9 @@
         </div>
         <p>Togglable controls</p>
         <div>
-          <esl-d-bind target="#demo-3" mode="toggle" class="btn btn-sec-blue">Toggle</esl-d-bind>
-          <esl-d-bind target="#demo-3" mode="show" class="btn btn-sec-blue">Show</esl-d-bind>
-          <esl-d-bind target="#demo-3" mode="hide" class="btn btn-sec-blue">Hide</esl-d-bind>
+          <esl-d-bind target="#demo-3" mode="toggle" class="btn">Toggle</esl-d-bind>
+          <esl-d-bind target="#demo-3" mode="show" class="btn">Show</esl-d-bind>
+          <esl-d-bind target="#demo-3" mode="hide" class="btn">Hide</esl-d-bind>
         </div>
       </div>
     </section>
@@ -63,15 +63,15 @@
       <div>
         <h4>Property decorators</h4>
         <div>
-          <esl-d-attribute id="demo-4" body-class="toggleable-opened" open>
-            <div class="alert" role="alert">This is a toggleable that has it's parameters decorated via 'props' and 'jsonAttr' decorators</div>
-          </esl-d-attribute>
+          <esl-toggleable id="demo-4" body-class="toggleable-opened" open>
+            <div class="alert" role="alert">This is a toggleable that has it's parameters decorated via 'props' and 'attr' decorators</div>
+          </esl-toggleable>
         </div>
         <p>Togglable controls</p>
-        <div class="btn-container">
-          <esl-trigger target="#demo-4" mode="toggle" class="btn">Toggle</esl-trigger>
-          <esl-trigger target="#demo-4" mode="show" class="btn">Show</esl-trigger>
-          <esl-trigger target="#demo-4" mode="hide" class="btn">Hide</esl-trigger>
+        <div>
+          <esl-d-attribute target="#demo-4" mode="toggle" class="btn">Toggle</esl-d-attribute>
+          <esl-d-attribute target="#demo-4" mode="show" class="btn">Show</esl-d-attribute>
+          <esl-d-attribute target="#demo-4" mode="hide" class="btn">Hide</esl-d-attribute>
         </div>
       </div>
     </section>

@@ -1,7 +1,0 @@
-esl-d-attribute {
-  display: block;
-}
-
-esl-d-attribute:not(.open) {
-  display: none;
-}
