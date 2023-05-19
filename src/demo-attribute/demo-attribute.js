@@ -7,11 +7,6 @@ export class ESLDemoAttribute extends ESLTrigger {
   @prop('click') CLICK_EVENT;
   
   @attr({defaultValue: '1000'}) showDelay;
-  
-  connectedCallback() {
-    super.connectedCallback();
-    console.log(this.CLICK_EVENT, this.showDelay); // BUG: both are undefined
-  }
 
   @listen((that) => that.CLICK_EVENT)
   _onClick(e) {
